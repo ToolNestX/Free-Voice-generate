@@ -1,6 +1,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<textarea id="t" rows="6" style="width:100%"></textarea>
-<select id="v"></select>
-<button id="b">Generate</button>
-<script src="script.js"></script>
+<h3>AI Voice Generator</h3>
+<textarea id="t" rows="6" style="width:100%" placeholder="English text likhein"></textarea>
+<select id="v">
+  <option value="af_heart">Heart (female)</option>
+  <option value="af_bella">Bella (female)</option>
+  <option value="bf_emma">Emma (British female)</option>
+  <option value="am_michael">Michael (male)</option>
+  <option value="bm_george">George (British male)</option>
+</select>
+<button id="b" disabled>Loading model...</button>
+<p id="s"></p>
+<audio id="a" controls style="width:100%"></audio>
+<a id="d" download="voice.wav" style="display:none">⬇ Download WAV</a>
+<script type="module" src="script.js"></script>
